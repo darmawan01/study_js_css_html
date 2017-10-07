@@ -1,0 +1,63 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+body{
+	font-family: arial;
+}
+form table{
+	background: #fff;
+	box-shadow: 1px 2px 3px grey;
+	padding: 30px;
+	margin-top: 50px;
+}
+.formV table tr td{
+	padding: 3px;
+}
+.formV table tr td p {
+	margin-top: 0;
+}
+input[type="text"],input[type="password"],select,textarea{
+	width: 100%;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #DDDDDD;
+}
+input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);
+}
+form table h2 {
+	background: #00a5ff;
+	margin: -33px;
+	margin-bottom: -33px;
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 30px;
+	box-shadow: 0px 1px 1px grey;
+}
+form p i{
+	color: red;
+	font-size: 12px;
+}
+form button{
+	float: right;
+}
+button {
+	padding: 10px;
+	background: #0397e9;
+	border: none;
+	box-shadow: 1px 2px 3px grey;
+	color: #fff;
+}
+button:hover{
+	background: #0887ce;
+	cursor: pointer;
+}

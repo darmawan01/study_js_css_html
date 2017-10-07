@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS chapter 10 : Js Calculator </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body bgcolor="green">
+        
+        <h1>Js Calculator</h1>
+        <form name="theform">
+            Angka 1 <input type="text" name="bil1">
+            Angka 2 <input type="text" name="bil2">
+            
+            <select name="check" onchange="hitung()">
+                <option value="">---------------</option>
+                <option value="jumlah">Penjumlahan</option>
+                <option value="kurang">Pengurangan</option>
+                <option value="bagi">Pembagian</option>
+                <option value="kali">Perkalian</option>
+            </select>
+
+            hasil <input type="text" name="hasil">
+        </form>
+
+        <a href="js-chapter9.html">
+            <h1 align="center"> << Previous </h1>
+        </a>
+        <a href="js-chapter11.html">
+            <h1 align="center"> Next Js Training >> </h1>
+        </a>
+
+    </body>
+
+    <script language="javascript">
+            function hitung(){
+                var bil1 = parseFloat(document.theform.bil1.value)
+                var bil2 = parseFloat(document.theform.bil2.value)
+
+                var operate = document.theform.check.value
+
+                var hasil ;
+                if (operate == "jumlah"){
+                    hasil=bil1+bil2;
+                }else if (operate == "kurang"){
+                    hasil=bil1-bil2;
+                }else if (operate == "bagi"){
+                    hasil=bil1/bil2;
+                }else if (operate == "kali"){
+                    hasil=bil1*bil2;
+                }else{
+                    alert("Sorry, We aren't found that actions !!!")
+                }
+
+                document.theform.hasil.value = hasil;
+            }
+    </script>
+</html>

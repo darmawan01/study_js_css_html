@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Admin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="navbar">
+                <div class="nav-title">
+                    <h2>Library Admin</h2>
+                </div>
+                <div class="nav-website">
+                    <h3><a href="../index.html" style="">View Website</a></h3>
+                </div>
+            </div>
+            <div class="left-bar">
+                <div class="menu-left">
+                    <div class="profile">
+                        <div class="admin">
+                            <h3>Darmawan Zulkifli</h3>
+                        </div>
+                        <div class="img">
+                            <img src="../img/p.png" alt="Image">
+                        </div>
+                    </div>
+
+                    <div class="header-menu">
+                        <small style="margin-left:3px;">Perpustakaan Mantap Jiwa</small>
+                    </div>
+                    <div class="button-groub">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="button-groub">
+                        <a href="#">Data Buku</a>
+                    </div>
+                    <div class="button-groub">
+                        <a href="#">Data Anggota</a>
+                    </div>
+                    <div class="button-groub">
+                        <a href="#">Arsip</a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="block-content">
+                <p align="justify">
+                    Django merupakan salah satu fullstack web framework yang populer di kalangan programmer Python.
+                    Keunggulannya terletak pada beragamnya dukungan terhadap berbagai database baik itu relasional maupun
+                    non relasional. Secara default, Django mendukung database relasional seperti PostgreSQL, SQLite, MySQL, dan
+                    Oracle. Django memiliki segudang tur built-in yang dapat membantu Anda lebih mudah untuk membangun
+                    aplikasi. Beberapa tur yang menjadi Andalan Django adalah:<br>
+                    
+                    - Sistem autentikasi built-in<br>
+                    - Object relational mapper<br>
+                    - Built-in template engine<br>
+                    - Form dan ModelForm<br>
+                    - Administrator page<br>
+                    - Migration tool<br>
+                    - Command-line tool<br>
+                    - dan masih banyak lagi<br><br>
+               
+                        Django sendiri memiliki konsep MVT mungkin bisa dibilang mirip dengan MVC tapi sebenarnya agak berbeda:
+                        Model adalah le yang berisi class untuk menggambarkan sebuah tabel pada database
+                        Views adalah kumpulan function di dalam suatu modul yang akan memproses request dan memberikan
+                        response, sama halnya seperti controller di MVC
+                        Template adalah le yang berisi HTML dan tidak ada kode Python di dalamnya, sama halnya seperti views
+                        di MVC
+                        Kali ini kita akan membuat sebuah aplikasi untuk human resource department tapi dalam skala yang sangat
+                        kecil. Kita akan batasi aplikasi ini pada tur seperti berikut:<br>
+
+                        - Mengelola pengguna sistem<br>
+                        - Mengelola data divisi dan jabatan<br>
+                        - Mengelola data karyawan<br>
+                        - Mengelola data kehadiran<br>
+                        - Membuat halaman untuk karyawan untuk melihat daftar hadir dan pengajuan cuti<br>
+                        Di tutorial ini, empat tur pertama akan diselesaikan di tutorial ini, dan poin terakhir akan dibahas di tutorial
+                        berikutnya secara lebih mendalam di mana kita akan mengenal berbagai hal seputar membangun aplikasi web
+                        menggunakan Django. Mari kita ikuti terlebih dahulu tutorial bagian pertama ini.<br><br>
+                
+                        <b>Instalasi Django dan Python</b><br>
+                        Django dapat dipasang di berbagai sistem operasi seperti Windows, Mac OSX, Linux, dan BSD varian. Untuk
+                        pengguna Windows Anda dapat menggunakan installer .exe untuk Python, PIP, dan Django. Ingat, Python yang
+                        digunakan di tutorial ini adalah versi 2.7.x ke atas. Sedangkan untuk pengguna OSX umumnya tersedia dalam
+                        Brew atau installer tersendiri. Anda dapat mencari installer PIP, Python, dan Django untuk OSX. Sedangkan
+                        untuk pengguna Linux dan BSD mungkin agak lebih mudah proses instalasinya karena sudah disediakan
+                        repositori masing - masing sistem operasi. Berikut adalah cara install Django di Linux dan BSD.<br>
+                        
+                        Cara install di Ubuntu:<br>
+                        $ sudo apt-get install pip<br>
+                        $ sudo pip install django<br>
+                        
+                        Cara install di Fedora:<br>
+                        $ sudo yum install pip<br>
+                        $ sudo pip install django<br><br>
+                
+                        <b> Proyek Baru</b>
+                        Untuk membuat proyek baru di Django cukup mudah. Berbeda dengan beberapa web framework yang bisa
+                        digunakan setelah mengunduh source code-nya, installer Django disimpan di sistem operasi untuk kemudian
+                        lagi di-update versinya bila diperlukan. Hanya dengan menggunakan django-admin.py di konsol kita dapat
+                        membuat sebuah proyek Django baru. Untuk tutorial ini silahkan simpan saja di folder manapun yang Anda
+                        sukai, kemudian panggil perintah berikut untuk membuat proyek baru:<br>
+                        $ django-admin.py startproject mini_hrd
+                </p>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

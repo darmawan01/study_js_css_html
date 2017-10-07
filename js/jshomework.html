@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Perkiraan gaji | Js Functions </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <center>Mengkalkulasi Gaji</center>
+            </div>
+
+            <div class="card-form">
+                <div class="head-form">
+                    <center><h1>Cloud's</h1></center>
+                </div>
+                <div class="content">
+                    <form name="forminput" style="padding:10px;">
+                        <div class="label">
+                            <label for="" style="font-size:20px;">Pendidikan Terakhir</label>
+                        </div>
+                        <div class="form-input">
+                            <select name="golongan" onchange="penggajian()">
+                                <option value="">---------------------------------- Choices --------------------------------</option>
+                                <option value="sma">SMA</option>
+                                <option value="s1">S1</option>
+                                <option value="s2">S2</option>
+                            </select>
+                        </div>
+                        <div class="label">
+                            <label for="" style="font-size:20px;">Gaji Pokok</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="gaji" disabled>
+                        </div>
+                        <div class="label">
+                            <label for="" style="font-size:20px;">Jumlah Kehadiran</label>
+                        </div>
+                        <div id="form-input">
+                            <input type="text" name="kehadiran" onchange="calculate()">
+                            
+                        </div>
+
+                        <div class="label">
+                            <label for="" style="font-size:20px;">Potongan</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="potongan" disabled>
+                        </div>
+                        <div class="label">
+                            <label for="" style="font-size:20px;">Total Gaji</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="total" disabled>
+                        </div>
+
+                        <div class="button2">
+                            <button type="submit" onclick="save()">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script language="javascript">
+
+        function penggajian(){
+            var sma = 1500000
+            var s1  = 2500000
+            var s2  = 3500000
+            var gaji= 0
+
+            var select = document.forminput.golongan.value
+
+            if (select == "sma"){
+                gaji = sma
+            }else if(select == "s1"){
+                gaji = s1
+            }else if(select == "s2"){
+                gaji = s2
+            }else{
+                gaji = 0   
+            }
+
+            document.forminput.gaji.value = gaji
+        }
+        
+        function calculate(){
+
+            var gaj = document.forminput.gaji.value
+            var kehadiran = parseInt(document.forminput.kehadiran.value)
+            var potongan=0;
+            if (kehadiran >= 25){
+                potongan = 0 * gaj
+            }else if( kehadiran >= 15 && kehadiran < 25){
+                potongan = 0.5 * gaj
+            }else if (kehadiran >= 7 && kehadiran < 15){
+                potongan = 0.7 * gaj
+            }else{
+                potongan = 1 * gaj
+            }
+
+            document.forminput.potongan.value = potongan;
+ 
+            var gajtot = gaj - potongan
+            document.forminput.total.value = gajtot
+        }
+
+        function save(){
+            alert("Data Was Saved, Thank You ^_^ !!!")
+        }
+
+    </script>
+</html>

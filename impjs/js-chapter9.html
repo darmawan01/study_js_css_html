@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS chapter 9 : msg box </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body bgcolor="green">
+        
+        <h1>Input Form</h1>
+        <form name="formku">
+            Nama <input type="text" name="input">
+             <button type="submit" onclick="baca()">Check</button>
+        </form>
+
+        <a href="js-chapter8.html">
+            <h1 align="center"> << Previous </h1>
+        </a>
+        <a href="js-chapter10.html">
+            <h1 align="center"> Next Js Training >> </h1>
+        </a>
+
+    </body>
+
+    <script language="javascript">
+            function baca(){
+                var nilai = document.formku.input.value
+
+                alert("Anda telah memasukkan input : "+nilai)
+            }
+    </script>
+</html>

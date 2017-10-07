@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS chapter 5 : Kondisi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body bgcolor="green">
+        
+        <script language="javascript">
+            var tgl;
+            var status;
+
+            tgl = prompt("Today :")
+            if (tgl < 15 & tgl > 1){
+                status="tanggal :"+tgl +" adalah tanggal muda";
+            }else if(tgl < 30 & tgl > 15){
+                status="tanggal :"+tgl +" adalah tanggal tua";
+            }else{
+                status="tanggal :"+tgl +" tidak ditemukan";
+            }
+
+            document.write(status)
+            
+        </script>
+
+        <a href="js-chapter4.html">
+            <h1 align="center"> << Previous </h1>
+        </a>
+        <a href="js-chapter6.html">
+            <h1 align="center"> Next Js Training >> </h1>
+        </a>
+
+    </body>
+</html>

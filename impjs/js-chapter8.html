@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS chapter 8 : Function </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body bgcolor="green">
+        
+        <script language="javascript">
+            function diskon(harga_awal){
+                var diskon = 0.5*harga_awal;
+
+                var hrgDisc = harga_awal-diskon;
+
+                return hrgDisc;
+            }
+
+            var harga = prompt("masukkan harga (Rp.)")
+
+            document.write("Price After Discount (Rp.) : "+diskon(harga))
+            
+        </script>
+
+        <a href="js-chapter7.html">
+            <h1 align="center"> << Previous </h1>
+        </a>
+        <a href="js-chapter9.html">
+            <h1 align="center"> Next Js Training >> </h1>
+        </a>
+
+    </body>
+</html>
